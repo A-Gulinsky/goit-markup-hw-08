@@ -1,0 +1,61 @@
+// // Глобальне налаштування
+// @import './utils/variables' ;
+// @import './base/normalize.scss' ;
+// @import './base/globalsettings' ;
+// @import './utils/mixins';
+
+
+// // -----Шапка сайту 
+
+// @import './components/header/page-header' ;
+// // Лого
+// @import './components/logo/logo' ;
+// // Navbar
+// @import './components/header/site-nav' ;
+// // Контакти
+// @import './components/header/header-contacts' ;
+
+// // -----Головна інформація на сторінці
+
+// // ---Сторінка WebStudio
+
+// // Секція замовлення послуги
+// @import './components/main/webstudio/service' ;
+// // Секція особливостей компанії 
+// @import './components/main/webstudio/features' ;
+// // Секція Чим ми займаємось
+// @import './components/main/webstudio/work';
+// // Секція Наша Команда
+// @import './components/main/webstudio/team';
+// // Секція клієнтів
+// @import './components/main/webstudio/clients' ;
+
+// // ---Сторінка Portfolio
+
+// // Конпки фільтрації
+// @import './components/main/portfolio/filters-btn';
+// // Картки Портфоліо
+// @import './components/main/portfolio/portfolio-cards' ;
+
+// // -----Підвал сайту
+
+// @import './components/footer/page-footer';
+// // Адреса
+// @import './components/footer/address';
+// // Соц.мережі
+// @import './components/footer/footer-socials';
+// // Форма на розсилку 
+// @import './components/footer/footer-form';
+
+// // -----------------------------------------------------------
+
+// // -----Модальне вікно
+
+// // backdrop
+// @import './components/main/webstudio/service-modal-window/backdrop' ;
+// // Форма
+// @import './components/main/webstudio/service-modal-window/form' ;
+
+
+
+

@@ -1,0 +1,23 @@
+@mixin button($width: min-width, $padding) {
+    min-width: none $width;
+    padding: $padding $padding;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    text-align: center;
+    color: $additional-text-color;
+  
+    background-color: $interactive-text-color;
+    border: 1px solid transparent;
+  
+    cursor: pointer;
+  
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,59 @@
+// Секція замовлення послуги
+
+.service__background-image {
+  max-width: 1600px;
+  max-height: 400px;
+
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/servicebgimg.jpg);
+  background-color: $service-bg-color;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-main__background-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service__container {
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+  width: 480px;
+  margin: 0 auto;
+  text-align: center;
+
+  // MEDIA MOBILE
+  @media screen and (min-width: 480px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  } 
+}
+
+.service__title {
+  font-weight: 900;
+  color: $additional-text-color;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  //setting
+  &-setting {
+    margin-bottom: 30px;
+  }
+}
+
+.service__btn {
+
+  // mixin button
+  @include button($width: 216px, $padding: 10px 32px);
+
+  // hover , focus
+  &--focused:hover,
+  &--focused:focus {
+    background-color: $additional-btn-color;
+  }
+}

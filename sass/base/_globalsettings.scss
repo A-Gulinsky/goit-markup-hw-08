@@ -1,0 +1,107 @@
+// Глобальні налаштування 
+
+body {
+  font-family: $primary-font-style;
+  letter-spacing: 0.03em;
+  
+  background-color: $additional-bg-color;
+  
+  color: $secondary-text-color;
+}
+
+// Секції
+
+.section {
+
+  background-color: $additional-bg-color;
+
+  // Padding 0 - section WORK
+  &:nth-last-child(3) {
+    padding-top: 0;
+  }
+
+  // background-color - section TEAM
+  &:nth-last-child(2) {
+    background-color: $team-bg-color;
+  }
+
+  // MEDIA MOBILE
+
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section__title {
+  color: $primary-text-color;
+  font-weight: 700;
+  text-align: center;
+
+  // MEDIA MOBILE 
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
+.section_title-setting {
+  
+  // MEDIA MOBILE
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+  }
+}
+
+// Глобальне налаштування контейнеру
+
+.container {
+  // width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+}
+
+/* Паттерн visually-hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Налаштунок фото */
+img {
+  display: block;
+}
+
+/* Глобальне скидання */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+ margin: 0; 
+ padding: 0;
+}
+
+/* Налаштування для списків */
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

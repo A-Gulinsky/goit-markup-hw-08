@@ -1,0 +1,26 @@
+// Глобальне налаштування
+@import './utils/variables';
+@import './base/normalize.scss';
+@import './base/globalsettings';
+@import './utils/mixins';
+
+
+// Перша сторінка
+
+// MAIN 
+
+// service
+
+ @import './components/service' ;
+
+// features 
+@import './components/features' ;
+
+// work 
+ @import './components/work' ;
+
+// team
+ @import './components/team' ;
+
+// clients
+@import './components/clients'
