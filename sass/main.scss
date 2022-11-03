@@ -4,23 +4,13 @@
 @import './base/globalsettings';
 @import './utils/mixins';
 
+// logo
 
-// Перша сторінка
+@import './components/logo/logo';
 
-// MAIN 
+// HEADER
 
-// service
-
- @import './components/service' ;
-
-// features 
-@import './components/features' ;
-
-// work 
- @import './components/work' ;
-
-// team
- @import './components/team' ;
-
-// clients
-@import './components/clients'
+@import './components/header/page-header';
+@import './components/header/site-nav';
+@import './components/header/header-contacts';
+@import './components/header/mobile-menu/mobile-menu';

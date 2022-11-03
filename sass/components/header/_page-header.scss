@@ -1,0 +1,25 @@
+// Блок шапки 
+
+.page-header {
+  border-bottom: 1px solid $header-line-color;
+
+  background-color: $additional-bg-color;
+}
+
+.page-header__container {
+  display: flex;
+  // align-items: center;
+
+  // MEDIA MOBILE
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width:768px) {
+    align-items: center;
+  }
+}

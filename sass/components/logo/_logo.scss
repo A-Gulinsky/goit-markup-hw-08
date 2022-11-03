@@ -1,0 +1,37 @@
+// Лого сайту 
+
+.logo {
+  color: $interactive-text-color;
+  font-family: $logo-font-style;
+
+  text-decoration: none;
+
+  // MEDIA MOBILE/TAB
+  @media screen and (max-width:1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  // MEDIA DESKTOP
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+
+// header logo
+.logo__header-color {
+  color: $logo-text-color;
+}
+
+// footer logo
+.logo__footer-color {
+  color: $additional-text-color;
+}
+
+
+.page-footer__logo {
+  display:inline-block;
+
+  margin-bottom: 20px;
+}

@@ -1,0 +1,112 @@
+// Контактні дані
+
+.info-list {
+  
+  // MEDIA MOBILE
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  // MEDIA MOBILE
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.info-list__box {
+  margin-left: auto;
+}
+
+.info-list__item {
+  
+  // MEDIA TAB
+  @media screen and (max-width: 1199px) {
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.info-list__link{
+  display: flex;
+  align-items: center;
+
+  color: $secondary-text-color;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // focus,hover 
+  &--focused:hover,
+  &--focused:focus {
+    color: $interactive-text-color;
+  }
+
+  // MEDIA MOBILE/TAB
+  @media screen and (max-width:1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
+  // MEDIA DESKTOP
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+
+    padding-top: 32px;
+    padding-bottom: 31px;
+  }
+} 
+
+.info-list__icon {
+  fill: currentColor;
+
+  // MEDIA TAB
+  @media screen and (max-width: 1199px) {
+    margin-right: 8px;
+  }
+  
+  // MEDIA DESKTOP
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+}
+
+.info-list__icon-mailto {
+  // MEDIA TAB 
+  @media screen and (max-width:1199px) {
+    width: 14px;
+    height: 10px;
+  }
+
+  // MEDIA DESKTOP
+  @media screen and (min-width:1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.info-list__icon-phone {
+
+  // MEDIA TAB 
+  @media screen and (max-width:1199px) {
+    width: 10px;
+    height: 14px;
+  }
+  
+  // MEDIA DESKTOP
+  @media screen and (min-width:1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}
