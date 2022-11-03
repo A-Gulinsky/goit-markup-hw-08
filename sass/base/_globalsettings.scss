@@ -9,6 +9,10 @@ body {
   color: $secondary-text-color;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 // Секції
 
 .section {
@@ -25,12 +29,18 @@ body {
     background-color: $team-bg-color;
   }
 
-  // MEDIA MOBILE
-
-  @media screen and (min-width: 480px) {
+  // MEDIA MOBILE/TAB
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  // MEDIA DESKTOP
+  @media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
 }
 
 .section__title {
@@ -38,18 +48,29 @@ body {
   font-weight: 700;
   text-align: center;
 
-  // MEDIA MOBILE 
-  @media screen and (min-width: 480px) {
+  // MEDIA MOBILE/TAB 
+  @media screen and (max-width: 1199px) {
     font-size: 28px;
     line-height: 1.17;
+  }
+
+  // MEDIA DESKTOP
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 
 .section_title-setting {
   
-  // MEDIA MOBILE
-  @media screen and (min-width: 480px) {
+  // MEDIA MOBILE/TAB
+  @media screen and (max-width: 1199px) {
     margin-bottom: 30px;
+  }
+
+  // MEDIA DESKTOP
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
@@ -62,8 +83,21 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
+  // :::::::::::MEDIA MOBILE
+
   @media screen and (min-width: 480px) {
     width: 480px;
+  }
+
+  // ::::::::::::MEDIA TAB
+  
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  // :::::::::::MEDIA DESKTOP
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
@@ -84,6 +118,8 @@ body {
 /* Налаштунок фото */
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Глобальне скидання */
