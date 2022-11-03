@@ -37,7 +37,7 @@
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a
-                class="site-nav__link site-nav__link--focused site-nav__link--current"
+                class="site-nav__link site-nav__link--focused"
                 href="./index.html"
                 >Студія</a
               >
@@ -45,7 +45,7 @@
 
             <li class="site-nav__item">
               <a
-                class="site-nav__link site-nav__link--focused"
+                class="site-nav__link site-nav__link--focused site-nav__link--current"
                 href="./portfolio.html"
                 >Портфоліо</a
               >
@@ -129,14 +129,66 @@
             <li class="card__item card__item-setting">
               <a class="card__link card__link--focused" href="#">
                 <div class="card__box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio1.jpg"
-                    alt="Ноутбук з веб-сайтом компанії"
-                    width="370"
-                    target="_blank"
-                    rel="noreferrer nofollow noopener"
-                  />
+                  <picture>
+                    <!-- MOBILE VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-one/card-one-mob-webp@1x.webp 1x,
+                        ./images/portfolio/card-one/card-one-mob-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-one/card-one-mob-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-one/card-one-mob-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <!-- TAB VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-one/card-one-tab-webp@1x.webp 1x,
+                        ./images/portfolio/card-one/card-one-tab-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-one/card-one-tab-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-one/card-one-tab-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <!-- DESKTOP VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-one/card-one-desc-webp@1x.webp 1x,
+                        ./images/portfolio/card-one/card-one-desc-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-one/card-one-desc-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-one/card-one-desc-jpg@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/card-one/card-one-mob-jpg@1x.jpg"
+                      alt="Ноутбук з веб-сайтом компанії"
+                      target="_blank"
+                      rel="noreferrer nofollow noopener"
+                    />
+                  </picture>
 
                   <div class="card__inner-box">
                     <p class="card__inner-text">
@@ -158,14 +210,66 @@
             <li class="card__item card__item-setting">
               <a class="card__link card__link--focused" href="#">
                 <div class="card__box">
-                  <img
-                    class="card__img"
-                    target="_blank"
-                    rel="noreferrer nofollow noopener"
-                    src="./images/portfolio2.jpg"
-                    alt="Постер з баскетболістами"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- MOBILE VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-two/card-two-mob-webp@1x.webp 1x,
+                        ./images/portfolio/card-two/card-two-mob-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-two/card-two-mob-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-two/card-two-mob-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <!-- TAB VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-two/card-two-tab-webp@1x.webp 1x,
+                        ./images/portfolio/card-two/card-two-tab-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-two/card-two-tab-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-two/card-two-tab-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <!-- DESKTOP VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-two/card-two-desc-webp@1x.webp 1x,
+                        ./images/portfolio/card-two/card-two-desc-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-two/card-two-desc-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-two/card-two-desc-jpg@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/card-two/card-two-mob-jpg@1x.jpg"
+                      alt="Постер з баскетболістами"
+                      target="_blank"
+                      rel="noreferrer nofollow noopener"
+                    />
+                  </picture>
 
                   <div class="card__inner-box">
                     <p class="card__inner-text">
@@ -187,14 +291,65 @@
             <li class="card__item card__item-setting">
               <a class="card__link card__link--focused" href="#">
                 <div class="card__box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio3.jpg"
-                    alt="Лого ресторану"
-                    width="370"
-                    target="_blank"
-                    rel="noreferrer nofollow noopener"
-                  />
+                  <picture>
+                    <!-- MOBILE VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-three/card-three-mob-webp@1x.webp 1x,
+                        ./images/portfolio/card-three/card-three-mob-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-three/card-three-mob-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-three/card-three-mob-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <!-- TAB VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-three/card-three-tab-webp@1x.webp 1x,
+                        ./images/portfolio/card-three/card-three-tab-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-three/card-three-tab-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-three/card-three-tab-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <!-- DESKTOP VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-three/card-three-desc-webp@1x.webp 1x,
+                        ./images/portfolio/card-three/card-three-desc-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-three/card-three-desc-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-three/card-three-desc-jpg@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/card-three/card-three-mob-jpg@1x.jpg"
+                      alt="Лого ресторану"
+                      target="_blank"
+                      rel="noreferrer nofollow noopener"
+                    />
+                  </picture>
 
                   <div class="card__inner-box">
                     <p class="card__inner-text">
@@ -216,14 +371,66 @@
             <li class="card__item card__item-setting">
               <a class="card__link card__link--focused" href="#">
                 <div class="card__box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio4.jpg"
-                    alt="Навушники"
-                    width="370"
-                    target="_blank"
-                    rel="noreferrer nofollow noopener"
-                  />
+                  <picture>
+                    <!-- MOBILE VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-four/card-four-mob-webp@1x.webp 1x,
+                        ./images/portfolio/card-four/card-four-mob-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-four/card-four-mob-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-four/card-four-mob-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <!-- TAB VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-four/card-four-tab-webp@1x.webp 1x,
+                        ./images/portfolio/card-four/card-four-tab-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-four/card-four-tab-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-four/card-four-tab-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+                    <!-- DESKTOP VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-four/card-four-desc-webp@1x.webp 1x,
+                        ./images/portfolio/card-four/card-four-desc-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-four/card-four-desc-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-four/card-four-desc-jpg@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/card-four/card-four-mob-jpg@1x.jpg"
+                      alt="Навушники"
+                      target="_blank"
+                      rel="noreferrer nofollow noopener"
+                    />
+                  </picture>
+
                   <div class="card__inner-box">
                     <p class="card__inner-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -244,14 +451,66 @@
             <li class="card__item card__item-setting">
               <a class="card__link card__link--focused" href="#">
                 <div class="card__box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio5.jpg"
-                    alt="Дві коробки"
-                    width="370"
-                    target="_blank"
-                    rel="noreferrer nofollow noopener"
-                  />
+                  <picture>
+                    <!-- MOBILE VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-five/card-five-mob-webp@1x.webp 1x,
+                        ./images/portfolio/card-five/card-five-mob-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-five/card-five-mob-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-five/card-five-mob-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <!-- TAB VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-five/card-five-tab-webp@1x.webp 1x,
+                        ./images/portfolio/card-five/card-five-tab-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-five/card-five-tab-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-five/card-five-tab-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <!-- DESKTOP VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-five/card-five-desc-webp@1x.webp 1x,
+                        ./images/portfolio/card-five/card-five-desc-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-five/card-five-desc-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-five/card-five-desc-jpg@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/card-five/card-five-mob-jpg@1x.jpg"
+                      alt="Дві коробки"
+                      target="_blank"
+                      rel="noreferrer nofollow noopener"
+                    />
+                  </picture>
 
                   <div class="card__inner-box">
                     <p class="card__inner-text">
@@ -273,14 +532,67 @@
             <li class="card__item card__item-setting">
               <a class="card__link card__link--focused" href="#">
                 <div class="card__box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio6.jpg"
-                    alt="Монітор"
-                    width="370"
-                    target="_blank"
-                    rel="noreferrer nofollow noopener"
-                  />
+                  <picture>
+                    <!-- MOBILE VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-six/card-six-mob-webp@1x.webp 1x,
+                        ./images/portfolio/card-six/card-six-mob-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-six/card-six-mob-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-six/card-six-mob-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <!-- TAB VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-six/card-six-tab-webp@1x.webp 1x,
+                        ./images/portfolio/card-six/card-six-tab-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-six/card-six-tab-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-six/card-six-tab-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <!-- DESKTOP VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-six/card-six-desc-webp@1x.webp 1x,
+                        ./images/portfolio/card-six/card-six-desc-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-six/card-six-desc-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-six/card-six-desc-jpg@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/card-six/card-six-mob-jpg@1x.jpg"
+                      alt="Монітор"
+                      target="_blank"
+                      rel="noreferrer nofollow noopener"
+                    />
+                  </picture>
+
                   <div class="card__inner-box">
                     <p class="card__inner-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -301,14 +613,67 @@
             <li class="card__item card__item-setting">
               <a class="card__link card__link--focused" href="#">
                 <div class="card__box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio7.jpg"
-                    alt="Книга"
-                    width="370"
-                    target="_blank"
-                    rel="noreferrer nofollow noopener"
-                  />
+                  <picture>
+                    <!-- MOBILE VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-seven/card-seven-mob-webp@1x.webp 1x,
+                        ./images/portfolio/card-seven/card-seven-mob-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-seven/card-seven-mob-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-seven/card-seven-mob-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <!-- TAB VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-seven/card-seven-tab-webp@1x.webp 1x,
+                        ./images/portfolio/card-seven/card-seven-tab-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-seven/card-seven-tab-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-seven/card-seven-tab-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <!-- DESKTOP VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-seven/card-seven-desc-webp@1x.webp 1x,
+                        ./images/portfolio/card-seven/card-seven-desc-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-seven/card-seven-desc-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-seven/card-seven-desc-jpg@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/card-seven/card-seven-mob-jpg@1x.jpg"
+                      alt="Книга"
+                      target="_blank"
+                      rel="noreferrer nofollow noopener"
+                    />
+                  </picture>
+
                   <div class="card__inner-box">
                     <p class="card__inner-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -329,14 +694,67 @@
             <li class="card__item card__item-setting">
               <a class="card__link card__link--focused" href="#">
                 <div class="card__box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio8.jpg"
-                    alt="Етикетка-тег"
-                    width="370"
-                    target="_blank"
-                    rel="noreferrer nofollow noopener"
-                  />
+                  <picture>
+                    <!-- MOBILE VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-eight/card-eight-mob-webp@1x.webp 1x,
+                        ./images/portfolio/card-eight/card-eight-mob-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-eight/card-eight-mob-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-eight/card-eight-mob-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <!-- TAB VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-eight/card-eight-tab-webp@1x.webp 1x,
+                        ./images/portfolio/card-eight/card-eight-tab-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-eight/card-eight-tab-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-eight/card-eight-tab-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <!-- DESKTOP VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-eight/card-eight-desc-webp@1x.webp 1x,
+                        ./images/portfolio/card-eight/card-eight-desc-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-eight/card-eight-desc-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-eight/card-eight-desc-jpg@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/card-eight/card-eight-mob-jpg@1x.jpg"
+                      alt="Ноутбук з зображенням веб-сайту компанії"
+                      target="_blank"
+                      rel="noreferrer nofollow noopener"
+                    />
+                  </picture>
+
                   <div class="card__inner-box">
                     <p class="card__inner-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -357,14 +775,66 @@
             <li class="card__item card__item-setting">
               <a class="card__link card__link--focused" href="#">
                 <div class="card__box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio9.jpg"
-                    alt="Ноутбук з зображенням веб-сайту компанії"
-                    width="370"
-                    target="_blank"
-                    rel="noreferrer nofollow noopener"
-                  />
+                  <picture>
+                    <!-- MOBILE VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-nine/card-nine-mob-webp@1x.webp 1x,
+                        ./images/portfolio/card-nine/card-nine-mob-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-nine/card-nine-mob-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-nine/card-nine-mob-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <!-- TAB VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-nine/card-nine-tab-webp@1x.webp 1x,
+                        ./images/portfolio/card-nine/card-nine-tab-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width:1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-nine/card-nine-tab-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-nine/card-nine-tab-jpg@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                    />
+
+                    <!-- DESKTOP VERSION -->
+                    <source
+                      srcset="
+                        ./images/portfolio/card-nine/card-nine-desc-webp@1x.webp 1x,
+                        ./images/portfolio/card-nine/card-nine-desc-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-nine/card-nine-desc-jpg@1x.jpg 1x,
+                        ./images/portfolio/card-nine/card-nine-desc-jpg@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/card-nine/card-nine-mob-jpg@1x.jpg"
+                      alt="Ноутбук з зображенням веб-сайту компанії"
+                      target="_blank"
+                      rel="noreferrer nofollow noopener"
+                    />
+                  </picture>
 
                   <div class="card__inner-box">
                     <p class="card__inner-text">

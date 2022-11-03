@@ -5,17 +5,23 @@
 @import './utils/mixins';
 
 
-
+//-----------------------------------------------------------
 // logo
 @import './components/logo/logo';
+//-----------------------------------------------------------
 
+//-----------------------------------------------------------
 // HEADER
 @import './components/header/page-header';
 @import './components/header/site-nav';
 @import './components/header/header-contacts';
+// mobile menu
 @import './components/header/mobile-menu/mobile-menu';
+//-----------------------------------------------------------
 
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 // PAGE WEBSTUDIO
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 // service
 @import './components/webstudio/service' ;
@@ -27,8 +33,12 @@
 @import './components/webstudio/team';
 // clients
 @import './components/webstudio/clients';
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 //PAGE PORTFOLIO
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 // filters btn
 @import './components/portfolio/filters-btn';
@@ -40,13 +50,11 @@
 @import './components/footer/address';
 @import './components/footer/footer-socials';
 @import './components/footer/footer-form';
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-
-
-
-
-
+//-----------------------------------------------------------
 // MODAL WINDOW
 
 @import './components/webstudio/service-modal-window/backdrop';
 @import './components/webstudio/service-modal-window/form';
+//-----------------------------------------------------------

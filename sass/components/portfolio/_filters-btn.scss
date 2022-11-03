@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   // MEDIA MOBILE
   @media screen and (max-width:767px) {
     gap: 15px 8px;
@@ -14,25 +15,30 @@
   @media screen and (min-width:768px) {
     justify-content: center;
   }
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
   //setting
   &__setting {
 
+    // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     // MEDIA MOBILE
     @media screen and (max-width:767px) {
       margin-bottom: 40px;
     }
 
-    // MEDIA TAB 
-    @media screen and (min-width:768px) and (max-width:1199px) {
+    // MEDIA TAB
+    @media screen and (max-width:1199px) {
       margin-bottom: 30px;
     }
-
-    // MEDIA DEKSTOP
+    
+    // MEDIA DESC
     @media screen and (min-width:1200px) {
       margin-bottom: 50px;
     }
+    // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   }
+
+
 }
 
 .filter-list__item {
@@ -41,6 +47,7 @@
 
   &-setting {
 
+    // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     // MEDIA TAB/DESKTOP
       @media screen and (min-width:767px) {
       margin-right: 8px;
@@ -49,6 +56,7 @@
         margin-right: 0;
       }
     }
+    // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   }
 }
 

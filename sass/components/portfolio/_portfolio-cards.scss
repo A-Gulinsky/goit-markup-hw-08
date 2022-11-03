@@ -13,6 +13,7 @@
 .card__item {
   background-color: $additional-bg-color;
 
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   // MEDIA MOBILE
   @media screen and (max-width:767px) {
     &:not(:last-child) {
@@ -30,6 +31,7 @@
   @media screen and (min-width:1200px) {
     width: 370px;
   }
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 }
 
 .card__link {
@@ -84,11 +86,26 @@
 }
 
 .card__inner-text {
-  padding: 63px 24px;
-
   font-size: 18px;
   line-height: 1.55;
   color: $additional-text-color;
+
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA MOBILE
+  @media screen and (max-width:767px) {
+    padding: 77px 24px;
+  }
+
+  // MEDIA TAB
+  @media screen and (max-width:1199px) {
+    padding: 49px 24px 77px 24px;
+  }
+
+  // MEDIA DESKTOP
+  @media screen and (min-width:1200px) {
+    padding: 63px 24px;
+  }
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 }
 
 .card__footer {

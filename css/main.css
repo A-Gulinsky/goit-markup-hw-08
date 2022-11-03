@@ -1261,7 +1261,7 @@ ul {
     margin-bottom: 40px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .filter-list__setting {
     margin-bottom: 30px;
   }
@@ -1396,10 +1396,24 @@ ul {
 }
 
 .card__inner-text {
-  padding: 63px 24px;
   font-size: 18px;
   line-height: 1.55;
   color: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .card__inner-text {
+    padding: 77px 24px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .card__inner-text {
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__inner-text {
+    padding: 63px 24px;
+  }
 }
 
 .card__footer {
