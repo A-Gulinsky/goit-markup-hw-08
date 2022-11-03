@@ -1,0 +1,55 @@
+// Робота компанії
+
+.section__work {
+  // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA MOBILE/TAB
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+}
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-list__item {
+  width: 370px;
+
+  //setting
+  &-setting {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.work-list__box {
+  position: relative;
+}
+
+.work-list__inner-box {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  text-align: center;
+  
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work-list__inner-text {
+  padding-bottom: 27px;
+  padding-top: 27px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  color: $additional-text-color;
+  text-transform: uppercase;
+}

@@ -1,0 +1,143 @@
+// Секція Команди Розробників 
+
+ .team-list {
+
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA ALL
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  // // ::::::::::::::::::::::::::::::::::::::::
+  // MEDIA MOBILE/TAB
+  @media screen and (max-width: 1199px) {
+    gap: 30px;
+  }
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+}
+
+.team-list__item {
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+              0px 1px 1px rgba(0, 0, 0, 0.14),
+              0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  background-color: $additional-bg-color;
+  border-radius: 0px 0px 4px 4px;
+
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA MOBILE
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA TAB
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA DESKTOP
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+}
+
+.team-list__box {
+  padding-top: 30px;
+
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA MOBILE/TAB
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 24px;
+  }
+
+  // ::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA DESKTOP
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+  // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+}
+
+.team-list__name {
+  margin-bottom: 10px;
+
+  color: $list-name-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.team-list__position {
+  margin-bottom: 16px;
+
+  color: $secondary-text-color;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+// Соц мережі
+
+.team-list__socials {
+  display: flex;
+  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.team-list__item-socials {
+  margin-left: 10px;
+
+  &:nth-child(1) {
+    margin-left: 0;
+  }
+}
+
+.team-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // hover,focus
+  &--focused:hover,
+  &--focused:focus {
+    background-color: $interactive-text-color;
+  }
+}
+
+.team-list__icon {
+  fill : $team-svg-bg;
+  width: 20px;
+  height: 20px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // hover,focus
+  .team-list__link:hover &,
+  .team-list__link:focus & {
+    fill: $additional-text-color;
+  }
+}

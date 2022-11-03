@@ -201,23 +201,33 @@
         </div>
       </section>
 
-      <!-- Робота компанії -->
       <section class="section section__work">
         <div class="container">
-          <h2 class="section__title section_title-setting">
-            Чим ми займаємося
-          </h2>
-
           <!-- Список послуг -->
           <ul class="work-list">
             <li class="work-list__item work-list__item-setting">
               <div class="work-list__box">
-                <img
-                  class="work-list__photo"
-                  src="./images/work1.jpg"
-                  alt="програміст працює на своєму робочому місці"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/webstudio/work/one/work-one-webp@1x.webp 1x,
+                      ./images/webstudio/work/one/work-one-webp@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    srcset="
+                      ./images/webstudio/work/one/work-one-jpg@1x.jpg 1x,
+                      ./images/webstudio/work/one/work-one-jpg@2x.jpg 2x
+                    "
+                    class="work-list__photo"
+                    src="./images/webstudio/work/one/work-one-jpg@1x.jpg"
+                    alt="програміст працює на своєму робочому місці"
+                    width="370"
+                  />
+                </picture>
+
                 <div class="work-list__inner-box">
                   <p class="work-list__inner-text">Десктопні додатки</p>
                 </div>
@@ -226,12 +236,27 @@
 
             <li class="work-list__item work-list__item-setting">
               <div class="work-list__box">
-                <img
-                  class="work-list__photo"
-                  src="./images/work2.jpg"
-                  alt="команда розробників працює над інтерфейсом для мобільних телефонів"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/webstudio/work/two/work-two-webp@1x.webp 1x,
+                      ./images/webstudio/work/two/work-two-webp@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    srcset="
+                      ./images/webstudio/work/two/work-two-jpg@1x.jpg 1x,
+                      ./images/webstudio/work/two/work-two-jpg@2x.jpg 2x
+                    "
+                    class="work-list__photo"
+                    src="./images/webstudio/work/two/work-two-jpg@1x.jpg"
+                    alt="команда розробників працює над інтерфейсом для мобільних телефонів"
+                    width="370"
+                  />
+                </picture>
+
                 <div class="work-list__inner-box">
                   <p class="work-list__inner-text">Мобільні додатки</p>
                 </div>
@@ -240,12 +265,27 @@
 
             <li class="work-list__item work-list__item-setting">
               <div class="work-list__box">
-                <img
-                  class="work-list__photo"
-                  src="./images/work3.jpg"
-                  alt="креативний художник веб-дизайну з робочим графічним планшетом для підбору кольорів"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/webstudio/work/three/work-three-webp@1x.webp 1x,
+                      ./images/webstudio/work/three/work-three-webp@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    srcset="
+                      ./images/webstudio/work/three/work-three-jpg@1x.jpg 1x,
+                      ./images/webstudio/work/three/work-three-jpg@2x.jpg 2x
+                    "
+                    class="work-list__photo"
+                    src="./images/webstudio/work/three/work-three-jpg@1x.jpg"
+                    alt="креативний художник веб-дизайну з робочим графічним планшетом для підбору кольорів"
+                    width="370"
+                  />
+                </picture>
+
                 <div class="work-list__inner-box">
                   <p class="work-list__inner-text">Дизайнерські рішення</p>
                 </div>
@@ -264,12 +304,66 @@
           <ul class="team-list">
             <!-- Ігор Дем'яненко -->
             <li class="team-list__item team-list__item-setting">
-              <img
-                class="team-list__photo"
-                src="./images/person1.jpg"
-                alt="на фото Ігор Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <!-- MOBILE VERSION -->
+                <source
+                  srcset="
+                    ./images/webstudio/team/one/developer-one-mobile-webp@1x.webp 1x,
+                    ./images/webstudio/team/one/developer-one-mobile-webp@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/webstudio/team/one/developer-one-mobile-jpg@1x.jpg 1x,
+                    ./images/webstudio/team/one/developer-one-mobile-jpg@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <!-- TAB VERSION -->
+                <source
+                  srcset="
+                    ./images/webstudio/team/one/developer-one-tab-webp@1x.webp 1x,
+                    ./images/webstudio/team/one/developer-one-tab-webp@2x.webp 2x
+                  "
+                  media="(max-width: 1199px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/webstudio/team/one/developer-one-tab-jpg@1x.jpg 1x,
+                    ./images/webstudio/team/one/developer-one-tab-jpg@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+
+                <!-- DESKTOP VERSION -->
+                <source
+                  srcset="
+                    ./images/webstudio/team/one/developer-one-desktop-webp@1x.webp 1x,
+                    ./images/webstudio/team/one/developer-one-desktop-webp@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/webstudio/team/one/developer-one-desktop-jpg@1x.jpg 1x,
+                    ./images/webstudio/team/one/developer-one-desktop-jpg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  src="./images/webstudio/team/one/developer-one-tab-jpg@1x.jpg"
+                  alt=""
+                />
+              </picture>
               <div class="team-list__box">
                 <h3 class="team-list__name">Ігор Дем'яненко</h3>
 
@@ -346,12 +440,66 @@
 
             <!-- Ольга Рєпіна -->
             <li class="team-list__item team-list__item-setting">
-              <img
-                class="team-list__photo"
-                src="./images/person2.jpg"
-                alt="на фото Ольга Рєпіна"
-                width="270"
-              />
+              <picture>
+                <!-- MOBILE VERSION -->
+                <source
+                  srcset="
+                    ./images/webstudio/team/two/developer-two-mobile-webp@1x.webp 1x,
+                    ./images/webstudio/team/two/developer-two-mobile-webp@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/webstudio/team/two/developer-two-mobile-jpg@1x.jpg 1x,
+                    ./images/webstudio/team/two/developer-two-mobile-jpg@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <!-- TAB VERSION -->
+                <source
+                  srcset="
+                    ./images/webstudio/team/two/developer-two-tab-webp@1x.webp 1x,
+                    ./images/webstudio/team/two/developer-two-tab-webp@2x.webp 2x
+                  "
+                  media="(max-width: 1199px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/webstudio/team/two/developer-two-tab-jpg@1x.jpg 1x,
+                    ./images/webstudio/team/two/developer-two-tab-jpg@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+
+                <!-- DESKTOP VERSION -->
+                <source
+                  srcset="
+                    ./images/webstudio/team/two/developer-two-desktop-webp@1x.webp 1x,
+                    ./images/webstudio/team/two/developer-two-desktop-webp@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/webstudio/team/two/developer-two-desktop-jpg@1x.jpg 1x,
+                    ./images/webstudio/team/two/developer-two-desktop-jpg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  src="./images/webstudio/team/two/developer-two-tab-jpg@1x.jpg"
+                  alt=""
+                />
+              </picture>
               <div class="team-list__box">
                 <h3 class="team-list__name">Ольга Рєпіна</h3>
 
@@ -428,12 +576,66 @@
 
             <!-- Микола Тарасов -->
             <li class="team-list__item team-list__item-setting">
-              <img
-                class="team-list__photo"
-                src="./images/person3.jpg"
-                alt="на фото Микола Тарасов"
-                width="270"
-              />
+              <picture>
+                <!-- MOBILE VERSION -->
+                <source
+                  srcset="
+                    ./images/webstudio/team/three/developer-three-mobile-webp@1x.webp 1x,
+                    ./images/webstudio/team/three/developer-three-mobile-webp@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/webstudio/team/three/developer-three-mobile-jpg@1x.jpg 1x,
+                    ./images/webstudio/team/three/developer-three-mobile-jpg@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <!-- TAB VERSION -->
+                <source
+                  srcset="
+                    ./images/webstudio/team/three/developer-three-tab-webp@1x.webp 1x,
+                    ./images/webstudio/team/three/developer-three-tab-webp@2x.webp 2x
+                  "
+                  media="(max-width: 1199px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/webstudio/team/three/developer-three-tab-jpg@1x.jpg 1x,
+                    ./images/webstudio/team/three/developer-three-tab-jpg@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+
+                <!-- DESKTOP VERSION -->
+                <source
+                  srcset="
+                    ./images/webstudio/team/three/developer-three-desktop-webp@1x.webp 1x,
+                    ./images/webstudio/team/three/developer-three-desktop-webp@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/webstudio/team/three/developer-three-desktop-jpg@1x.jpg 1x,
+                    ./images/webstudio/team/three/developer-three-desktop-jpg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  src="./images/webstudio/team/three/developer-three-tab-jpg@1x.jpg"
+                  alt=""
+                />
+              </picture>
 
               <div class="team-list__box">
                 <h3 class="team-list__name">Микола Тарасов</h3>
@@ -511,12 +713,66 @@
 
             <!-- Михайло Єрмаков -->
             <li class="team-list__item team-list__item-setting">
-              <img
-                class="team-list__photo"
-                src="./images/person4.jpg"
-                alt="на фото Михайло Єрмаков"
-                width="270"
-              />
+              <picture>
+                <!-- MOBILE VERSION -->
+                <source
+                  srcset="
+                    ./images/webstudio/team/four/developer-four-mobile-webp@1x.webp 1x,
+                    ./images/webstudio/team/four/developer-four-mobile-webp@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/webstudio/team/four/developer-four-mobile-jpg@1x.jpg 1x,
+                    ./images/webstudio/team/four/developer-four-mobile-jpg@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <!-- TAB VERSION -->
+                <source
+                  srcset="
+                    ./images/webstudio/team/four/developer-four-tab-webp@1x.webp 1x,
+                    ./images/webstudio/team/four/developer-four-tab-webp@2x.webp 2x
+                  "
+                  media="(max-width: 1199px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/webstudio/team/four/developer-four-tab-jpg@1x.jpg 1x,
+                    ./images/webstudio/team/four/developer-four-tab-jpg@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+
+                <!-- DESKTOP VERSION -->
+                <source
+                  srcset="
+                    ./images/webstudio/team/four/developer-four-desktop-webp@1x.webp 1x,
+                    ./images/webstudio/team/four/developer-four-desktop-webp@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/webstudio/team/four/developer-four-desktop-jpg@1x.jpg 1x,
+                    ./images/webstudio/team/four/developer-four-desktop-jpg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  src="./images/webstudio/team/four/developer-four-tab-jpg@1x.jpg"
+                  alt=""
+                />
+              </picture>
               <div class="team-list__box">
                 <h3 class="team-list__name">Михайло Єрмаков</h3>
 

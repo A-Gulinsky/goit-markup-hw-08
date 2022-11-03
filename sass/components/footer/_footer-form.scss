@@ -1,0 +1,109 @@
+.mailing-list {
+
+  // ::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA MOBILE/TAB
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  // ::::::::::::::::::::::::::::::::::::::::::::::::
+}
+
+.mailing-list__form {
+
+  // ::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA MOBILE/TAB
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  // :::::::::::::::::::::::::::::::::::::::::::::::: 
+}
+
+.mailing-list__title {
+  display: block;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  color: $additional-text-color;
+
+  text-transform: uppercase;
+
+  // setting 
+  &-setting {
+    margin-bottom: 20px;
+  }
+}
+
+.mailing-list__input {
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 0.8;
+  color: $additional-text-color;
+
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));;
+
+  outline: inherit;
+
+  // placeholder
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  // ::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA MOBILE
+
+  @media screen and (max-width: 479px) {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width:480px) {
+     width: 450px;
+  }
+
+  // MEDIA DESKTOP
+  @media screen and (min-width:1200px) {
+    width: 358px;
+  }
+  // ::::::::::::::::::::::::::::::::::::::::::::::::
+}
+
+.mailing-list__btn {
+
+  // ::::::::::::::::::::::::::::::::::::::::::::::::
+  //mixin button 
+  @include button($width: 200px, $padding: 10px 28px);
+
+  display: inline-flex;
+  align-items: center;
+
+  // MEDIA MOBILE/TAB
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+
+  // MEDIA DESKTOP
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+  // ::::::::::::::::::::::::::::::::::::::::::::::::
+}
+
+.mailing-list__btn-icon {
+  margin-left: 10px;
+  fill: $additional-text-color;
+}

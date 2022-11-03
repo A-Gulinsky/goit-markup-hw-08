@@ -1,0 +1,30 @@
+// Налаштування футера та контейнерів
+
+.page-footer {
+  background-color: $footer-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+
+  // ::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA MOBILE
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  // MEDIA TAB
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0 165px;
+  }
+
+  // MEDIA DESKTOP
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
+  // ::::::::::::::::::::::::::::::::::::::::::::::::
+}

@@ -16,7 +16,25 @@
 @import './components/header/mobile-menu/mobile-menu';
 
 // PAGE WEBSTUDIO
+
+// service
 @import './components/webstudio/service' ;
+// features
+@import './components/webstudio/features';
+// work
+@import './components/webstudio/work';
+// team
+@import './components/webstudio/team';
+// clients
+@import './components/webstudio/clients';
+
+//PAGE PORTFOLIO
+
+//FOOTER
+@import './components/footer/page-footer';
+@import './components/footer/address';
+@import './components/footer/footer-socials';
+@import './components/footer/footer-form';
 
 
 

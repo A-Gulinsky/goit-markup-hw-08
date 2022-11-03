@@ -1,0 +1,55 @@
+// Секція клієнтів
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA MOBILE
+  @media screen and (max-width: 479px) {
+    justify-content: center;
+    align-items: center;
+  }
+  // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+}
+
+.clients-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid $border-clients-static;
+  fill: $border-clients-static;
+
+  height: 92px;
+
+  transition-property: border , fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // hover,focus
+  &:hover,
+  &:focus {
+    outline: transparent;
+    fill: $interactive-text-color;
+    border-color: $interactive-text-color;
+  }
+
+  // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA MOBILE
+  @media screen and (max-width: 767px) {
+    width: 210px;
+  }
+
+  // MEDIA TAB
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  } 
+
+  // MEDIA DESKTOP
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+  // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+}
