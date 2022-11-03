@@ -790,7 +790,7 @@ ul {
   color: #2196F3;
 }
 
-@media screen and (min-width: 438px) {
+@media screen and (min-width: 480px) {
   .mobile-menu__socials-item:not(:last-child)::after {
     content: "";
     position: absolute;
@@ -1765,7 +1765,8 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 .form__input--focused:focus {
-  outline: 1px solid #2196f3;
+  outline: transparent;
+  border: 1px solid #2196f3;
   -webkit-transition-property: outline;
   transition-property: outline;
   -webkit-transition-duration: 250ms;
@@ -1866,7 +1867,8 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 .form__comment:focus {
-  outline: 1px solid #2196f3;
+  outline: transparent;
+  border: 1px solid #2196f3;
   -webkit-transition-property: outline;
   transition-property: outline;
   -webkit-transition-duration: 250ms;
