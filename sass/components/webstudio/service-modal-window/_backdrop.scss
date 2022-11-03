@@ -33,7 +33,7 @@
     & .modal {
       transform: scale(0.9);
 
-      @media screen and (min-width:1200px) {
+      @media screen and (min-width:480px) {
         transform: translate(-50%, -50%) scale(0.9);
       }
     }
