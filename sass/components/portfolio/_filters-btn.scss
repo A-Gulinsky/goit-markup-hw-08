@@ -1,0 +1,86 @@
+// Фільтрація карток (btn)
+
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  
+  // MEDIA MOBILE
+  @media screen and (max-width:767px) {
+    gap: 15px 8px;
+    max-width: 350px;
+  }
+
+  // MEDIA DESKTOP
+  @media screen and (min-width:768px) {
+    justify-content: center;
+  }
+
+  //setting
+  &__setting {
+
+    // MEDIA MOBILE
+    @media screen and (max-width:767px) {
+      margin-bottom: 40px;
+    }
+
+    // MEDIA TAB 
+    @media screen and (min-width:768px) and (max-width:1199px) {
+      margin-bottom: 30px;
+    }
+
+    // MEDIA DEKSTOP
+    @media screen and (min-width:1200px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.filter-list__item {
+
+  //setting
+
+  &-setting {
+
+    // MEDIA TAB/DESKTOP
+      @media screen and (min-width:767px) {
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.filter-list__btn {
+  padding: 6px 22px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+
+  border-radius: 4px;
+  border: 1px transparent;
+  background-color: $btn-list-color;
+
+  cursor: pointer;
+
+  transition-property: background-color , color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // hover,focus
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+              0px 1px 2px rgba(0, 0, 0, 0.08),
+              0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    background-color: $interactive-text-color;
+    color: $additional-text-color;
+  }
+}
+
