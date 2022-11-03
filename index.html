@@ -884,7 +884,10 @@
 
     <!-- Модальне вікно -->
 
-    <div class="backdrop backdrop__setting backdrop--is-hidden" data-modal>
+    <div
+      class="backdrop backdrop__first backdrop__setting backdrop--is-hidden"
+      data-modal
+    >
       <div class="modal modal__setting">
         <button
           class="modal__button modal__button-setting modal__button--focused"
@@ -985,29 +988,24 @@
             </li>
           </ul>
 
-          <p class="form__checkbox form__checkbox-setting">
+          <p class="form__checkbox">
             <label class="form__policy">
               <input class="form__checked" type="checkbox" name="policy" />
 
-              <svg
-                class="form__icon-enable form__icon-enable--checked"
-                width="16"
-                height="15"
-              >
-                <use href="./images/icons.svg#icon-icon-succes"></use>
+              <svg class="form__checkbox-icon" width="16" height="15">
+                <use
+                  class="form__icon-enable"
+                  href="../images/icons.svg#icon-icon-succes"
+                ></use>
+                <use
+                  class="form__icon-disable"
+                  href="../images/icons.svg#icon-icon-checked"
+                ></use>
               </svg>
 
-              <svg
-                class="form__icon-disable form__icon-disable--checked"
-                width="16"
-                height="15"
-              >
-                <use href="./images/icons.svg#icon-icon-checked"></use>
-              </svg>
-
-              <span class="form__ckeckbox-text">
+              <span class="form__checkbox-text">
                 Погоджуюсь з розсилкою та приймаю
-                <a class="form__link" href="">Умови договору</a>
+                <a class="form__checkbox-link" href="">Умови договору</a>
               </span>
             </label>
           </p>

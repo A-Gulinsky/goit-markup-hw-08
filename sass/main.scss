@@ -4,13 +4,26 @@
 @import './base/globalsettings';
 @import './utils/mixins';
 
-// logo
 
+
+// logo
 @import './components/logo/logo';
 
 // HEADER
-
 @import './components/header/page-header';
 @import './components/header/site-nav';
 @import './components/header/header-contacts';
 @import './components/header/mobile-menu/mobile-menu';
+
+// PAGE WEBSTUDIO
+@import './components/webstudio/service' ;
+
+
+
+
+
+
+// MODAL WINDOW
+
+@import './components/webstudio/service-modal-window/backdrop';
+@import './components/webstudio/service-modal-window/form';

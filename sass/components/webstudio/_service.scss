@@ -1,0 +1,119 @@
+// Секція замовлення послуги
+
+.service__background-image {
+  max-width: 100%;
+
+  background-color: $service-bg-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA MOBILE
+  @media screen and (max-width:480px) {
+    background-image: 
+      linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+      url(../images/webstudio/service/hero/mobile-hero@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        
+          background-image: 
+            linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+            url(../images/webstudio/service/hero/mobile-hero@2x.jpg);
+        
+        }
+      }
+
+  // MEDIA TAB
+      
+    @media screen and (min-width:481px) and (max-width:768px) {
+      background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), 
+        url(../images/webstudio/service/hero/tab-hero@1x.jpg);
+        
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+        
+          background-image:
+            linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+            url(../images/webstudio/service/hero/tab-hero@2x.jpg);
+        
+        }
+    }
+    //MEDIA DESKTOP
+
+    @media screen and (min-width:769px) {
+      background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), 
+        url(../images/webstudio/service/hero/desktop-hero@1x.jpg);
+      
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+      
+          background-image:
+            linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+            url(../images/webstudio/service/hero/desktop-hero@2x.jpg);
+      
+        }
+    }
+  // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  }
+
+.page-main__background-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service__container {
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+     margin: 0 auto;
+     text-align: center;
+     max-width: 480px;
+
+  // MEDIA MOBILE/TAB
+  @media screen and (max-width: 1199px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  
+  @media screen and (min-width:1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.service__title {
+  font-weight: 900;
+  color: $additional-text-color;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  //setting
+  &-setting {
+    margin-bottom: 30px;
+  }
+}
+
+.service__btn {
+
+  // mixin button
+  @include button($width: 216px, $padding: 10px 32px);
+
+  // hover , focus
+  &--focused:hover,
+  &--focused:focus {
+    background-color: $additional-btn-color;
+  }
+}
