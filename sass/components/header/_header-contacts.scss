@@ -82,31 +82,27 @@
   }
 }
 
-.info-list__icon-mailto {
+.info-list__icon-tab {
   // MEDIA TAB 
   @media screen and (max-width:1199px) {
-    width: 14px;
-    height: 10px;
+    display: block;
   }
 
   // MEDIA DESKTOP
   @media screen and (min-width:1200px) {
-    width: 16px;
-    height: 12px;
+    display: none;
   }
 }
 
-.info-list__icon-phone {
+.info-list__icon-desktop {
 
   // MEDIA TAB 
   @media screen and (max-width:1199px) {
-    width: 10px;
-    height: 14px;
+    display: none;
   }
   
   // MEDIA DESKTOP
   @media screen and (min-width:1200px) {
-    width: 10px;
-    height: 16px;
+    display: block;
   }
 }

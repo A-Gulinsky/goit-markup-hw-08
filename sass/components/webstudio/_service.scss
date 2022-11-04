@@ -1,15 +1,13 @@
 // Секція замовлення послуги
 
 .service__background-image {
-  max-width: 100%;
-
   background-color: $service-bg-color;
   background-size: cover;
   background-repeat: no-repeat;
 
   // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   // MEDIA MOBILE
-  @media screen and (max-width:480px) {
+  @media screen and (max-width:767px) {
     background-image: 
       linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)), 
@@ -28,8 +26,7 @@
       }
 
   // MEDIA TAB
-      
-    @media screen and (min-width:481px) and (max-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
       background-image: 
         linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)), 
@@ -48,7 +45,8 @@
     }
     //MEDIA DESKTOP
 
-    @media screen and (min-width:769px) {
+    @media screen and (min-width:1200px) {
+      max-width: 1600px;
       background-image: 
         linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)), 
@@ -78,17 +76,18 @@
   // padding-bottom: 200px;
      margin: 0 auto;
      text-align: center;
-     max-width: 480px;
 
   // MEDIA MOBILE/TAB
   @media screen and (max-width: 1199px) {
     padding-top: 118px;
     padding-bottom: 118px;
+    max-width: 480px;
   }
   
   @media screen and (min-width:1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
+    width: 696px;
   }
 }
 
@@ -103,6 +102,11 @@
   //setting
   &-setting {
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width:1200px) {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 

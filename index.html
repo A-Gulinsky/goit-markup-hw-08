@@ -9,7 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -66,7 +65,24 @@
               class="info-list__link info-list__link--focused"
               href="mailto:info@devstudio.com"
             >
-              <svg class="info-list__icon" width="16" height="12">
+              <!-- TAB VERSION -->
+              <svg
+                class="info-list__icon info-list__icon-tab"
+                width="14"
+                height="10"
+              >
+                <use
+                  href="./images/icons.svg#icon-envelope"
+                  width="14"
+                  height="10"
+                ></use>
+              </svg>
+              <!-- DESKTOP VERSION -->
+              <svg
+                class="info-list__icon info-list__icon-desktop"
+                width="16"
+                height="12"
+              >
                 <use
                   href="./images/icons.svg#icon-envelope"
                   width="16"
@@ -81,7 +97,24 @@
               class="info-list__link info-list__link--focused"
               href="tel:+380961111111"
             >
-              <svg class="info-list__icon" width="10" height="16">
+              <!-- TAB VERSION -->
+              <svg
+                class="info-list__icon info-list__icon-tab"
+                width="10"
+                height="14"
+              >
+                <use
+                  href="./images/icons.svg#icon-smartphone"
+                  width="10"
+                  height="14"
+                ></use>
+              </svg>
+              <!-- DESKTOP VERSION -->
+              <svg
+                class="info-list__icon info-list__icon-desktop"
+                width="10"
+                height="16"
+              >
                 <use
                   href="./images/icons.svg#icon-smartphone"
                   width="10"
@@ -1163,12 +1196,12 @@
         <form class="form" autocomplete="off">
           <ul class="form__list">
             <li class="form__item form__item-setting">
-              <label class="form__lable">
-                <div class="form__span-box form__span-box-setting">
-                  <span class="form__span-text">Ім'я</span>
-                </div>
+              <div class="form__span-box form__span-box-setting">
+                <span class="form__span-text">Ім'я</span>
+              </div>
 
-                <div class="form__box">
+              <div class="form__box">
+                <label class="form__lable">
                   <input
                     class="form__input form__input--focused"
                     type="text"
@@ -1181,16 +1214,16 @@
                   >
                     <use href="./images/icons.svg#icon-person-black"></use>
                   </svg>
-                </div>
-              </label>
+                </label>
+              </div>
             </li>
             <li class="form__item form__item-setting">
-              <label class="form__lable">
-                <div class="form__span-box form__span-box-setting">
-                  <span class="form__span-text">Телефон</span>
-                </div>
+              <div class="form__span-box form__span-box-setting">
+                <span class="form__span-text">Телефон</span>
+              </div>
 
-                <div class="form__box">
+              <div class="form__box">
+                <label class="form__lable">
                   <input
                     class="form__input form__input--focused"
                     type="text"
@@ -1203,16 +1236,16 @@
                   >
                     <use href="./images/icons.svg#icon-modal-phone"></use>
                   </svg>
-                </div>
-              </label>
+                </label>
+              </div>
             </li>
             <li class="form__item form__item-setting">
-              <label class="form__lable">
-                <div class="form__span-box form__span-box-setting">
-                  <span class="form__span-text">Пошта</span>
-                </div>
+              <div class="form__span-box form__span-box-setting">
+                <span class="form__span-text">Пошта</span>
+              </div>
 
-                <div class="form__box">
+              <div class="form__box">
+                <label class="form__lable">
                   <input
                     class="form__input form__input--focused"
                     type="text"
@@ -1225,15 +1258,15 @@
                   >
                     <use href="./images/icons.svg#icon-modal-email"></use>
                   </svg>
-                </div>
-              </label>
+                </label>
+              </div>
             </li>
             <li class="form__item form__item-setting">
-              <label class="form__label">
-                <div class="form__span-box form__span-box-setting">
-                  <span class="form__span-text">Коментар</span>
-                </div>
-              </label>
+              <div class="form__span-box form__span-box-setting">
+                <span class="form__span-text">Коментар</span>
+              </div>
+
+              <label class="form__label"> </label>
               <textarea
                 class="form__comment"
                 name="comments"

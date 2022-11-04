@@ -3,13 +3,16 @@
 .footer-address {
   
   // ::::::::::::::::::::::::::::::::::::::::::::::::
+  // MEDIA MOBILE
+  @media screen and (max-width:767px) {
+    margin-bottom: 60px;
+  }
   // MEDIA MOBILE/TAB
+
   @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-bottom: 60px;
   }
 
   // MEDIA DESKTOP

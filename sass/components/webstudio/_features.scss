@@ -82,12 +82,13 @@
   // ::::::::::::::::::::::::::::::::::::::::::::::
   // :::::::::::::::MEDIA MOBILE
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
 
-  @media screen and (max-width: 479px) {
-    text-align: center;
+  // MEDIA TAB/DESKTOP
+  @media screen and (min-width: 768px) {
+    text-align: left;
   }
   // :::::::::::::::::::::::::::::::::::::::::::::::
 }
