@@ -437,6 +437,16 @@ ul {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .site-nav__setting {
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-left: 93px;
+  }
+}
 
 .site-nav__list {
   display: -webkit-box;
@@ -444,10 +454,7 @@ ul {
   display: flex;
 }
 
-@media screen and (min-width: 768px) {
-  .site-nav__item:first-child {
-    margin-left: 88px;
-  }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .site-nav__item:nth-child(2) {
     margin-left: 51px;
   }
@@ -455,14 +462,13 @@ ul {
     margin-left: 50px;
   }
 }
-.site-nav__item:first-child {
-  margin-left: 93px;
-}
-.site-nav__item:nth-child(2) {
-  margin-left: 53px;
-}
-.site-nav__item:nth-child(3) {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .site-nav__item:nth-child(2) {
+    margin-left: 53px;
+  }
+  .site-nav__item:nth-child(3) {
+    margin-left: 50px;
+  }
 }
 
 .site-nav__link {
@@ -1128,8 +1134,6 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 .team-list__item-socials {
